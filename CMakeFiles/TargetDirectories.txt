@@ -1,0 +1,4 @@
+C:/Users/User/.gemini/antigravity/scratch/vulkan14_compute/build/CMakeFiles/CompileShaders.dir
+C:/Users/User/.gemini/antigravity/scratch/vulkan14_compute/build/CMakeFiles/Vulkan14Compute.dir
+C:/Users/User/.gemini/antigravity/scratch/vulkan14_compute/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/.gemini/antigravity/scratch/vulkan14_compute/build/CMakeFiles/ZERO_CHECK.dir
