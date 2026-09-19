@@ -1,0 +1,20 @@
+#version 450
+
+layout(local_size_x = 64, local_size_y = 1, local_size_z = 1) in;
+
+// CPUから送られる定数データ (Push Constants)
+layout(push_constant) uniform PushConstants {
+    int multiplier;
+    int offset;
+} pc;
+
+// シェーダーからCPUへ送り返すデータ (SSBO: Shader Storage Buffer Object)
+layout(std430, binding = 0) buffer OutputBuffer {
+    int results[];
+};
+
+void main() {
+    uint index = gl_GlobalInvocationID.x;
+    // 定数データを用いた計算: results[index] = index * multiplier + offset
+    results[index] = int(index) * pc.multiplier + pc.offset;
+}
